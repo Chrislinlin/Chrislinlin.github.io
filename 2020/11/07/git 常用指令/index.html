@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>git 常用指令 - Chrislinlin</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Chrislinlin"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Chrislinlin"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content=""><meta property="og:type" content="blog"><meta property="og:title" content="git 常用指令"><meta property="og:url" content="http://chrislinlin.github.io/2020/11/07/git%20%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"><meta property="og:site_name" content="Chrislinlin"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://i.imgur.com/g8PBJcm.png"><meta property="og:image" content="https://i.imgur.com/62pGzGS.png"><meta property="og:image" content="https://i.imgur.com/26oeayQ.png"><meta property="og:image" content="https://i.imgur.com/xYKNOnL.png"><meta property="og:image" content="https://i.imgur.com/3rp6yfJ.png"><meta property="og:image" content="https://i.imgur.com/zP7iZmq.png"><meta property="og:image" content="https://i.imgur.com/GTXgr7l.png"><meta property="og:image" content="https://i.imgur.com/YWyBzen.png"><meta property="og:image" content="https://i.imgur.com/Ugl7Nw2.png"><meta property="og:image" content="https://i.imgur.com/Xdop2Km.png"><meta property="og:image" content="https://i.imgur.com/BXsXKdL.png"><meta property="og:image" content="https://i.imgur.com/TyP6cps.png"><meta property="og:image" content="https://i.imgur.com/3DGHCU3.png"><meta property="og:image" content="https://i.imgur.com/S7keXU3.png"><meta property="og:image" content="https://i.imgur.com/Z4CEjv5.png"><meta property="og:image" content="https://i.imgur.com/odbQH5O.png"><meta property="article:published_time" content="2020-11-07T15:49:49.000Z"><meta property="article:modified_time" content="2021-03-11T06:14:24.649Z"><meta property="article:author" content="Chrislinlin"><meta property="article:tag" content="git"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://i.imgur.com/g8PBJcm.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://chrislinlin.github.io/2020/11/07/git%20%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"},"headline":"git 常用指令","image":["https://i.imgur.com/g8PBJcm.png","https://i.imgur.com/62pGzGS.png","https://i.imgur.com/26oeayQ.png","https://i.imgur.com/xYKNOnL.png","https://i.imgur.com/3rp6yfJ.png","https://i.imgur.com/zP7iZmq.png","https://i.imgur.com/GTXgr7l.png","https://i.imgur.com/YWyBzen.png","https://i.imgur.com/Ugl7Nw2.png","https://i.imgur.com/Xdop2Km.png","https://i.imgur.com/BXsXKdL.png","https://i.imgur.com/TyP6cps.png","https://i.imgur.com/3DGHCU3.png","https://i.imgur.com/S7keXU3.png","https://i.imgur.com/Z4CEjv5.png","https://i.imgur.com/odbQH5O.png"],"datePublished":"2020-11-07T15:49:49.000Z","dateModified":"2021-03-11T06:14:24.649Z","author":{"@type":"Person","name":"Chrislinlin"},"description":""}</script><link rel="canonical" href="http://chrislinlin.github.io/2020/11/07/git%20%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/boat.png" alt="Chrislinlin" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2020-11-07T15:49:49.000Z" title="2020/11/7 下午11:49:49">2020-11-07</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-03-11T06:14:24.649Z" title="2021/3/11 下午2:14:24">2021-03-11</time></span><span class="level-item">6 minutes read (About 878 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">git 常用指令</h1><div class="content"><p><img src="https://i.imgur.com/g8PBJcm.png"></p>
+  <span id="more"></span>
+
+<h2 id="git-add"><a href="#git-add" class="headerlink" title="git add"></a><code>git add</code></h2><ul>
+<li><p>表示把檔案加入暫存區，交給 git 操控。</p>
+</li>
+<li><p>Ex. 要是我想把 abc.txt 這個檔案加到 git_demo 這個資料夾，</p>
+<ul>
+<li>先 cd 到目的地資料夾，在輸入<code>git add &quot;abc.txt&quot;</code>就可以在用<code>git status</code>確認是否真的加入了</li>
+</ul>
+<p><img src="https://i.imgur.com/62pGzGS.png"></p>
+</li>
+</ul>
+<h2 id="git-commit-提交版本"><a href="#git-commit-提交版本" class="headerlink" title="git commit 提交版本"></a><code>git commit</code> 提交版本</h2><ul>
+<li><p>當你不論對檔案做新增修改任何動作時，其實只是先將檔案放入<strong>暫存區</strong>，需要 git commit 後才是真正的將檔案提交至倉庫存放。<br><img src="https://i.imgur.com/26oeayQ.png"></p>
+</li>
+<li><p>寫法：<code>git commit -m &quot;提交版本的資訊&quot;</code></p>
+</li>
+<li><p>延續上一個 Ex. 我們新增了一個 abc.txt 檔案，接著我們輸入<code>git add -m &quot;add abc.txt&quot;</code><br><img src="https://i.imgur.com/xYKNOnL.png"></p>
+</li>
+</ul>
+<h2 id="git-push-推送更新遠端資料庫"><a href="#git-push-推送更新遠端資料庫" class="headerlink" title="git push 推送更新遠端資料庫"></a><code>git push</code> 推送更新遠端資料庫</h2><ul>
+<li><p>將更新後的資料推送更新至遠端的 git 伺服器資料庫</p>
+</li>
+<li><p>延續上一個 Ex. 我們新增了一個 abc.txt 檔案，也將檔案提交至倉庫存放了，接著我們在網頁上的 github 創建了一個 repo(git_demo)，之後我們準備將檔案更新至 git 伺服器資料庫上。</p>
+</li>
+<li><p>前往 github 網頁創造一個 repo，假設 repo 名稱為 git_demo<br><img src="https://i.imgur.com/3rp6yfJ.png"></p>
+</li>
+<li><p>回到 vscode 輸入<code>git remote add origin git@github.com:Chrislinlin/git_demo.git</code><br><img src="https://i.imgur.com/zP7iZmq.png"></p>
+</li>
+<li><p>輸入 git push -u origin master<br><img src="https://i.imgur.com/GTXgr7l.png"></p>
+</li>
+</ul>
+<p>成功將 abc.txt 檔案推送給 github 上的遠端資料庫<br><img src="https://i.imgur.com/YWyBzen.png"></p>
+<h2 id="git-clone-pull取得-repo"><a href="#git-clone-pull取得-repo" class="headerlink" title="git clone/pull取得 repo"></a><code>git clone/pull</code>取得 repo</h2><ul>
+<li>使用時機：在 git 上看到有趣的專案，想要把他載到本地端電腦</li>
+<li>探討 git clone/ git pull</li>
+</ul>
+<h3 id="使用時機"><a href="#使用時機" class="headerlink" title="使用時機"></a>使用時機</h3><ul>
+<li><p>進入&lt;專案&gt;裡，點選 code，將連結複製起來<br><img src="https://i.imgur.com/Ugl7Nw2.png"></p>
+</li>
+<li><p>回到 iterm，先 <code>cd 存放專案的目的地資料夾</code></p>
+</li>
+<li><p>輸入 <code>git clone git@github.com:Chrislinlin/cinnamon.git</code></p>
+</li>
+</ul>
+<p><img src="https://i.imgur.com/Xdop2Km.png"></p>
+<ul>
+<li>目的地資料夾已成功載入專案內容</li>
+</ul>
+<p><img src="https://i.imgur.com/BXsXKdL.png"></p>
+<h2 id="git-clone-pull-差別"><a href="#git-clone-pull-差別" class="headerlink" title="git clone/ pull 差別"></a>git clone/ pull 差別</h2><ul>
+<li>要是<strong>第一次</strong>看到有趣的專案要載下來，請用 <code>git clone</code></li>
+<li>要是<strong>第二次以上</strong>要 renew，請用 <code>git pull</code></li>
+</ul>
+<h2 id="git-rm-刪除檔案"><a href="#git-rm-刪除檔案" class="headerlink" title="git rm 刪除檔案"></a><code>git rm</code> 刪除檔案</h2><ul>
+<li>寫法： <code>git rm &#39;要刪掉的檔案&#39;</code></li>
+<li>ex. 我們要將 abc.txt 這個檔案給刪掉。 cd 到目的地資料夾後輸入 <code>git rm abc.txt</code></li>
+</ul>
+<h2 id="git-mv-修改檔案名字"><a href="#git-mv-修改檔案名字" class="headerlink" title="git mv 修改檔案名字"></a><code>git mv</code> 修改檔案名字</h2><ul>
+<li>寫法： <code>git mv &#39;舊名字&#39; &#39;新名字&#39;</code></li>
+<li>ex. 我們要將 abc.txt 名字改成 def.txt。cd 到目的地資料夾後輸入 <code>git mv abc.txt def.txt</code></li>
+</ul>
+<p>檔案名字就從 abc -&gt; def<br><img src="https://i.imgur.com/TyP6cps.png"></p>
+<ol start="11">
+<li><code>git merge</code></li>
+</ol>
+<h2 id="git-branch查看-創造分支"><a href="#git-branch查看-創造分支" class="headerlink" title="git branch查看/ 創造分支"></a><code>git branch</code>查看/ 創造分支</h2><ul>
+<li><p>查看分支</p>
+<ul>
+<li>寫法：<code>git branch &quot;分支名稱&quot;</code></li>
+</ul>
+</li>
+<li><p>創造分支</p>
+<ul>
+<li>寫法：<code>git branch &quot;分支名稱&quot;</code></li>
+<li>ex. 先輸入 <code>git branch</code> 查看目前有什麼分支</li>
+</ul>
+<p>目前只有 master 這個分支<br><img src="https://i.imgur.com/3DGHCU3.png"></p>
+<p>輸入<code>git branch newDemo</code>創造一個 newDemo 的分支在用<code>git branch</code>查看，確定分支已被創造</p>
+<p><img src="https://i.imgur.com/S7keXU3.png"></p>
+<p><img src="https://i.imgur.com/Z4CEjv5.png"></p>
+</li>
+</ul>
+<h2 id="git-checkout-切換分支"><a href="#git-checkout-切換分支" class="headerlink" title="git checkout 切換分支"></a><code>git checkout</code> 切換分支</h2><ul>
+<li>寫法： <code>git checkout &#39;要切換的分支&#39;</code></li>
+<li>ex. 從 master 分支 要切換為 newDemo 分支 輸入 <code>git checkout newDemo</code>就轉換成功了。<br><img src="https://i.imgur.com/odbQH5O.png"></li>
+<li>==組合技==<ul>
+<li>寫法：<code>git checkout -b&quot;要創造的branch</code><br>這個方式直接把<code>git branch + git checkout</code>加在一起，可以直接在 A 分支，立刻創造 B 分支並切換到那去。</li>
+</ul>
+</li>
+</ul>
+<h6 id="tags-git"><a href="#tags-git" class="headerlink" title="tags: git"></a>tags: <code>git</code></h6></div><div class="article-licensing box"><div class="licensing-title"><p>git 常用指令</p><p><a href="http://chrislinlin.github.io/2020/11/07/git 常用指令/">http://chrislinlin.github.io/2020/11/07/git 常用指令/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Chrislinlin</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2020-11-07</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2021-03-11</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/git/">git</a></div><div class="notification is-danger">You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.</div></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" href="/" target="_blank" rel="noopener" data-type="afdian"><span class="icon is-small"><i class="fas fa-charging-station"></i></span><span>Afdian.net</span></a><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>Alipay</span><span class="qrcode"><img src="/" alt="Alipay"></span></a><a class="button donate" href="/" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a><a class="button donate" href="/" target="_blank" rel="noopener" data-type="patreon"><span class="icon is-small"><i class="fab fa-patreon"></i></span><span>Patreon</span></a><div class="notification is-danger">You forgot to set the <code>business</code> or <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.</div><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="/" alt="Wechat"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2020/11/07/HTML%20CSS%20Javascript%E7%B6%B2%E9%A0%81%E4%B8%89%E5%85%84%E5%BC%9F/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">HTML CSS Javascript 網頁三兄弟</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2020/11/05/Command%20Line%E5%B8%B8%E7%94%A8%E7%AD%86%E8%A8%98/"><span class="level-item">Command Line 常用筆記</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div class="notification is-danger">You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.</div></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Chrislinlin"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Chrislinlin</p><p class="is-size-6 is-block">Your title</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">17</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">7</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/chrislinlin" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/chrislinlin"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-03-29T22:25:06.328Z">2021-03-30</time></p><p class="title"><a href="/2021/03/30/JS%E7%B7%B4%E7%BF%92_%E9%9F%B3%E6%A8%82%E6%92%AD%E6%94%BE%E5%99%A8/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-03-29T21:49:13.893Z">2021-03-30</time></p><p class="title"><a href="/2021/03/30/JS%E7%B7%B4%E7%BF%92_%E6%89%93%E5%AD%97%E5%B0%8F%E9%81%8A%E6%88%B2/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-03-29T21:32:37.956Z">2021-03-30</time></p><p class="title"><a href="/2021/03/30/JS%E7%B7%B4%E7%BF%92_%E7%84%A1%E9%99%90%E8%BD%89%E8%BB%B8%E9%A0%81%E9%9D%A2/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-03-28T02:41:56.033Z">2021-03-28</time></p><p class="title"><a href="/2021/03/28/JS%E7%B7%B4%E7%BF%92_2022%E6%96%B0%E5%B9%B4%E5%80%92%E6%95%B8%E8%A8%88%E6%99%82%E5%99%A8/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-03-25T15:49:49.000Z">2021-03-25</time></p><p class="title"><a href="/2021/03/25/JS_Promise/">JS_Promise</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/03/"><span class="level-start"><span class="level-item">March 2021</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/02/"><span class="level-start"><span class="level-item">February 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/01/"><span class="level-start"><span class="level-item">January 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/12/"><span class="level-start"><span class="level-item">December 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/11/"><span class="level-start"><span class="level-item">November 2020</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/JS/"><span class="tag">JS</span><span class="tag">10</span></a></div><div class="control"><a class="tags has-addons" href="/tags/JS-%E7%B7%B4%E7%BF%92/"><span class="tag">JS_練習</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/command-line/"><span class="tag">command_line</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/css/"><span class="tag">css</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/html/"><span class="tag">html</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/jQuery/"><span class="tag">jQuery</span><span class="tag">3</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/boat.png" alt="Chrislinlin" height="28"></a><p class="is-size-7"><span>&copy; 2021 Chrislinlin</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

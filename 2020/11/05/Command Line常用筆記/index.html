@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Command Line 常用筆記 - Chrislinlin</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Chrislinlin"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Chrislinlin"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="這裡要介紹常用的 command line 指令，讓自己更熟悉使用 commandline 跟電腦溝通。"><meta property="og:type" content="blog"><meta property="og:title" content="Command Line 常用筆記"><meta property="og:url" content="http://chrislinlin.github.io/2020/11/05/Command%20Line%E5%B8%B8%E7%94%A8%E7%AD%86%E8%A8%98/"><meta property="og:site_name" content="Chrislinlin"><meta property="og:description" content="這裡要介紹常用的 command line 指令，讓自己更熟悉使用 commandline 跟電腦溝通。"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://i.imgur.com/pGWxSUA.png"><meta property="og:image" content="https://i.imgur.com/gXKHmOe.png"><meta property="og:image" content="https://i.imgur.com/n8g7m6L.png"><meta property="og:image" content="https://i.imgur.com/dbM17QW.png"><meta property="og:image" content="https://i.imgur.com/geI6FOl.png"><meta property="og:image" content="https://i.imgur.com/1dKmMJJ.png"><meta property="article:published_time" content="2020-11-05T15:49:49.000Z"><meta property="article:modified_time" content="2021-03-25T06:17:02.785Z"><meta property="article:author" content="Chrislinlin"><meta property="article:tag" content="command_line"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://i.imgur.com/pGWxSUA.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://chrislinlin.github.io/2020/11/05/Command%20Line%E5%B8%B8%E7%94%A8%E7%AD%86%E8%A8%98/"},"headline":"Command Line 常用筆記","image":["https://i.imgur.com/pGWxSUA.png","https://i.imgur.com/gXKHmOe.png","https://i.imgur.com/n8g7m6L.png","https://i.imgur.com/dbM17QW.png","https://i.imgur.com/geI6FOl.png","https://i.imgur.com/1dKmMJJ.png"],"datePublished":"2020-11-05T15:49:49.000Z","dateModified":"2021-03-25T06:17:02.785Z","author":{"@type":"Person","name":"Chrislinlin"},"description":"這裡要介紹常用的 command line 指令，讓自己更熟悉使用 commandline 跟電腦溝通。"}</script><link rel="canonical" href="http://chrislinlin.github.io/2020/11/05/Command%20Line%E5%B8%B8%E7%94%A8%E7%AD%86%E8%A8%98/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/boat.png" alt="Chrislinlin" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2020-11-05T15:49:49.000Z" title="2020/11/5 下午11:49:49">2020-11-05</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-03-25T06:17:02.785Z" title="2021/3/25 下午2:17:02">2021-03-25</time></span><span class="level-item">6 minutes read (About 909 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">Command Line 常用筆記</h1><div class="content"><p>這裡要介紹常用的 command line 指令，讓自己更熟悉使用 commandline 跟電腦溝通。</p>
+<span id="more"></span>
+
+<ul>
+<li><input checked="" disabled="" type="checkbox"> command line 基本指令介紹</li>
+<li><input checked="" disabled="" type="checkbox"> 要是不知道這指令什麼意思 -&gt; 好幫手「tldr」</li>
+</ul>
+<h3 id="基本指令介紹"><a href="#基本指令介紹" class="headerlink" title="基本指令介紹"></a>基本指令介紹</h3><h1 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h1><ul>
+<li>ls = list</li>
+<li>列出所有檔案和路徑</li>
+<li>寫法變化<ol>
+<li>列出隱藏的目錄：<code>ls -a</code></li>
+<li>列出詳細資料：<code>ls -l</code></li>
+<li>包上述兩個：<code>ls -la</code></li>
+<li>列出 .js 的檔案：<code>ls *.js</code></li>
+</ol>
+</li>
+</ul>
+<h1 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h1><ul>
+<li>cd = change directory</li>
+<li>切換目錄</li>
+<li>寫法： <code>cd &#39;要去的目的地&#39;</code></li>
+<li>狀況：假如我想要從我們 User/apple，前往桌面上一個叫做 Chris_Coding 的資料夾，便在 iterm 輸入</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd Desktop&#x2F;Chris_Coding</span><br></pre></td></tr></table></figure>
+
+<p>原本長這樣<br><img src="https://i.imgur.com/pGWxSUA.png"><br>後來就會在 Chris_Coding 的資料夾裡了<br><img src="https://i.imgur.com/gXKHmOe.png"></p>
+<ul>
+<li>寫法變化<ol>
+<li><code>cd .</code> 一個點：代表所在目錄</li>
+<li><code>cd ..</code> 兩個點：代表回去上一層目錄</li>
+</ol>
+</li>
+<li>==小訣竅==：輸入 cd 空格後再按住 tab 鍵會有像打出 ls 的功能，可以選擇要去資料夾<br><img src="https://i.imgur.com/n8g7m6L.png"></li>
+</ul>
+<h1 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h1><ul>
+<li>顯示目前所在位置<br><img src="https://i.imgur.com/dbM17QW.png"></li>
+</ul>
+<h1 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h1><p>功能有三</p>
+<ol>
+<li>顯示文件所有内容 <code>cat filename</code></li>
+<li>創建一个新文件<code>cat &gt; filename</code>(只能創建新文件不能編輯已有文件)<br>打完文件內容記得要按<code>ctrl +d</code>結束。</li>
+<li>把文件合併成一個文件<code>cat file1 file2 &gt; filexxx</code></li>
+</ol>
+<p><img src="https://i.imgur.com/geI6FOl.png"></p>
+<h1 id="touch"><a href="#touch" class="headerlink" title="touch"></a>touch</h1><ul>
+<li>碰一下檔案</li>
+<li>寫法：touch 檔名<br>情況一：假設檔案不存在，就會建立一個新的檔案。<br>情況二：假設檔案存在，更改檔案些改時間。</li>
+</ul>
+<h1 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a>mkdir</h1><ul>
+<li>mkdir = make directory</li>
+<li>新增資料夾</li>
+<li>寫法：<code>mkdir xxx</code></li>
+<li>可以先用<code>cd xx</code> 到你想要去的資料夾創造你想要的資料夾，就可以用<code>mkdir xxx</code>創造你需要的資料夾</li>
+</ul>
+<h1 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h1><ul>
+<li>rm = remove</li>
+<li>刪除檔案</li>
+<li>寫法:<ul>
+<li><code>rm xxx.html</code> 刪除某 html 檔</li>
+<li><code>rmdir</code> 刪除空資料夾，若資料夾內有檔案就無法刪除。</li>
+<li><code>rm -rf</code> 刪除整個檔案或整個資料夾 ＃謹慎使用，刪掉就真掰掰了。<br><strong>＊rm 檔案 就真的是刪掉檔案，使用時請小心！</strong></li>
+</ul>
+</li>
+</ul>
+<h1 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h1><ul>
+<li>mv = move file</li>
+<li>用來為文件或目錄改名、或將文件或目錄移到其它位置</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>原本長這樣</th>
+<th>後來變那樣</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>mv fileA fileB</td>
+<td>會將 a 文件改成 b 文件</td>
+</tr>
+<tr>
+<td>mv fileA abc(目錄)</td>
+<td>會將 a 文件移到 abc 資料夾</td>
+</tr>
+<tr>
+<td>mv def(目錄) abc(目錄)</td>
+<td>要是 abc 目錄存在，會將 def 目錄移到 abc 目錄/ 要是 abc 目錄不存在，會將 def 目錄改為 abc 目錄</td>
+</tr>
+<tr>
+<td>mv def(目錄) fileA</td>
+<td>失敗！</td>
+</tr>
+</tbody></table>
+<h1 id="sudo"><a href="#sudo" class="headerlink" title="sudo"></a>sudo</h1><ul>
+<li>取得權限</li>
+</ul>
+<h1 id="clear"><a href="#clear" class="headerlink" title="clear"></a>clear</h1><ul>
+<li>清空畫面</li>
+</ul>
+<h1 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h1><ul>
+<li>cp = copy</li>
+<li>複製檔案</li>
+<li>寫法：cp “要複製的檔案”</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cp aaa.html bbb.html   # 把檔案 aaa.html 複製一份成 bbb.html</span><br><span class="line"></span><br><span class="line">cp -r xx(資料夾) yy(資料夾) # 把 xx 資料夾 複製 進去 yy資料夾中</span><br></pre></td></tr></table></figure>
+
+<h1 id="tldr"><a href="#tldr" class="headerlink" title="tldr"></a>tldr</h1><p>當使用終端機時，我們常常會忘記如何寫命令或是不知道怎麼下筆，這時好幫手 <code>「tldr」</code>出現了。</p>
+<ol>
+<li> tldr 是什麼？</li>
+</ol>
+<ul>
+<li>一個 command line 的開源工具</li>
+<li>tldr = too long ; didn’t read （太長不想讀）</li>
+<li>使用情況：<ul>
+<li>知道指令，但忘記怎麼用</li>
+<li>遇到沒看過的指令，不知道如何用</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>安裝 tldr</li>
+</ol>
+<ul>
+<li>打開 iterm 輸入</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew tap tldr-pages&#x2F;tldr</span><br><span class="line">brew install tldr</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>小實驗</li>
+</ol>
+<ul>
+<li>狀況<br>假如我忘記 mkdir 是什麼意思？<br>我們可以再 iterm 輸入 <code>tldr mkdir</code>它便會告訴我們 mkdir 的用法<br><img src="https://i.imgur.com/1dKmMJJ.png"></li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Command Line 常用筆記</p><p><a href="http://chrislinlin.github.io/2020/11/05/Command Line常用筆記/">http://chrislinlin.github.io/2020/11/05/Command Line常用筆記/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Chrislinlin</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2020-11-05</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2021-03-25</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/command-line/">command_line</a></div><div class="notification is-danger">You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.</div></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" href="/" target="_blank" rel="noopener" data-type="afdian"><span class="icon is-small"><i class="fas fa-charging-station"></i></span><span>Afdian.net</span></a><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>Alipay</span><span class="qrcode"><img src="/" alt="Alipay"></span></a><a class="button donate" href="/" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a><a class="button donate" href="/" target="_blank" rel="noopener" data-type="patreon"><span class="icon is-small"><i class="fab fa-patreon"></i></span><span>Patreon</span></a><div class="notification is-danger">You forgot to set the <code>business</code> or <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.</div><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="/" alt="Wechat"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2020/11/07/git%20%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">git 常用指令</span></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div class="notification is-danger">You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.</div></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Chrislinlin"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Chrislinlin</p><p class="is-size-6 is-block">Your title</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">17</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">7</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/chrislinlin" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/chrislinlin"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-03-29T22:25:06.328Z">2021-03-30</time></p><p class="title"><a href="/2021/03/30/JS%E7%B7%B4%E7%BF%92_%E9%9F%B3%E6%A8%82%E6%92%AD%E6%94%BE%E5%99%A8/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-03-29T21:49:13.893Z">2021-03-30</time></p><p class="title"><a href="/2021/03/30/JS%E7%B7%B4%E7%BF%92_%E6%89%93%E5%AD%97%E5%B0%8F%E9%81%8A%E6%88%B2/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-03-29T21:32:37.956Z">2021-03-30</time></p><p class="title"><a href="/2021/03/30/JS%E7%B7%B4%E7%BF%92_%E7%84%A1%E9%99%90%E8%BD%89%E8%BB%B8%E9%A0%81%E9%9D%A2/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-03-28T02:41:56.033Z">2021-03-28</time></p><p class="title"><a href="/2021/03/28/JS%E7%B7%B4%E7%BF%92_2022%E6%96%B0%E5%B9%B4%E5%80%92%E6%95%B8%E8%A8%88%E6%99%82%E5%99%A8/"> </a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-03-25T15:49:49.000Z">2021-03-25</time></p><p class="title"><a href="/2021/03/25/JS_Promise/">JS_Promise</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/03/"><span class="level-start"><span class="level-item">March 2021</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/02/"><span class="level-start"><span class="level-item">February 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/01/"><span class="level-start"><span class="level-item">January 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/12/"><span class="level-start"><span class="level-item">December 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/11/"><span class="level-start"><span class="level-item">November 2020</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/JS/"><span class="tag">JS</span><span class="tag">10</span></a></div><div class="control"><a class="tags has-addons" href="/tags/JS-%E7%B7%B4%E7%BF%92/"><span class="tag">JS_練習</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/command-line/"><span class="tag">command_line</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/css/"><span class="tag">css</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/html/"><span class="tag">html</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/jQuery/"><span class="tag">jQuery</span><span class="tag">3</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/boat.png" alt="Chrislinlin" height="28"></a><p class="is-size-7"><span>&copy; 2021 Chrislinlin</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

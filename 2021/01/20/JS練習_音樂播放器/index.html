@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>JS_練習_音樂播放器 - Chrislinlin</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Chrislinlin"><meta name="msapplication-TileImage" content="/img/boat.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Chrislinlin"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="建立一個音樂播放器使使用者能自由播放音樂，選取想要播放的音樂位置，調整音量及曲目。 成品頁面"><meta property="og:type" content="blog"><meta property="og:title" content="JS_練習_音樂播放器"><meta property="og:url" content="http://chrislinlin.github.io/2021/01/20/JS%E7%B7%B4%E7%BF%92_%E9%9F%B3%E6%A8%82%E6%92%AD%E6%94%BE%E5%99%A8/"><meta property="og:site_name" content="Chrislinlin"><meta property="og:description" content="建立一個音樂播放器使使用者能自由播放音樂，選取想要播放的音樂位置，調整音量及曲目。 成品頁面"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://i.imgur.com/FyKNNAA.png"><meta property="article:published_time" content="2021-01-20T15:49:49.000Z"><meta property="article:modified_time" content="2021-04-03T04:40:31.188Z"><meta property="article:author" content="Chrislinlin"><meta property="article:tag" content="JS"><meta property="article:tag" content="JS_練習"><meta property="article:tag" content="jQuery"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://i.imgur.com/FyKNNAA.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://chrislinlin.github.io/2021/01/20/JS%E7%B7%B4%E7%BF%92_%E9%9F%B3%E6%A8%82%E6%92%AD%E6%94%BE%E5%99%A8/"},"headline":"JS_練習_音樂播放器","image":["https://i.imgur.com/FyKNNAA.png"],"datePublished":"2021-01-20T15:49:49.000Z","dateModified":"2021-04-03T04:40:31.188Z","author":{"@type":"Person","name":"Chrislinlin"},"description":"建立一個音樂播放器使使用者能自由播放音樂，選取想要播放的音樂位置，調整音量及曲目。 成品頁面"}</script><link rel="canonical" href="http://chrislinlin.github.io/2021/01/20/JS%E7%B7%B4%E7%BF%92_%E9%9F%B3%E6%A8%82%E6%92%AD%E6%94%BE%E5%99%A8/"><link rel="icon" href="/img/boat.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/boat.png" alt="Chrislinlin" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-01-20T15:49:49.000Z" title="2021/1/20 下午11:49:49">2021-01-20</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-04-03T04:40:31.188Z" title="2021/4/3 下午12:40:31">2021-04-03</time></span><span class="level-item">9 minutes read (About 1284 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">JS_練習_音樂播放器</h1><div class="content"><p>建立一個音樂播放器使使用者能自由播放音樂，選取想要播放的音樂位置，調整音量及曲目。</p>
+<h2 id="成品頁面"><a href="#成品頁面" class="headerlink" title="成品頁面"></a>成品頁面</h2><p><img src="https://i.imgur.com/FyKNNAA.png"></p>
+<span id="more"></span>
+
+<h2 id="成品功能"><a href="#成品功能" class="headerlink" title="成品功能"></a>成品功能</h2><ul>
+<li>播放/ 暫停音樂</li>
+<li>選擇前一首歌/ 下一首歌，</li>
+<li>根據總曲目數量，設定條件讓歌曲循環播放</li>
+<li>設定進度條，使使用者決定歌曲的播放位置</li>
+</ul>
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h3 id="audio"><a href="#audio" class="headerlink" title="audio:"></a>audio:</h3><p>使用 audio 標籤並放上 src，讓網頁能夠輕鬆載入音樂檔</p>
+<h2 id="css"><a href="#css" class="headerlink" title="css"></a>css</h2><h3 id="tranform-translate"><a href="#tranform-translate" class="headerlink" title="tranform: translate"></a>tranform: translate</h3><p>透過給定目標位置距離起始元素的 left(x 座標)&amp;top 距離(y 座標)，使元素從其當前位置移動。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">transform: translate(50px, 100px);</span><br></pre></td></tr></table></figure>
+
+<h3 id="width-用來控制網頁元素寬度"><a href="#width-用來控制網頁元素寬度" class="headerlink" title="width: 用來控制網頁元素寬度"></a>width: 用來控制網頁元素寬度</h3><pre><code>- auto:自動判斷網頁元素的寬度。
+- 數字＋單位：可接受的單位有 px, em, cm 等網頁標準單位
+- ％：利用百分比設定網頁元素寬度，需要有比較的參考
+- inherit：繼承自父層的寬度屬性值。（IE不支援）
+</code></pre>
+<h3 id="animation-設定動畫"><a href="#animation-設定動畫" class="headerlink" title="animation: 設定動畫"></a>animation: 設定動畫</h3><ul>
+<li>animation 常見屬性：<ul>
+<li><code>animation-name</code>:動畫名稱</li>
+<li><code>animation-duration</code>：動畫持續時間，預設 0，單位 s 或 ms。</li>
+<li><code>animation-deplay</code>：動畫延遲播放時間，預設 0，單位 s 或 ms。</li>
+<li><code>animation-play-state</code>:動畫播放或暫停狀態，預設 running。其他還有 paused。</li>
+<li><code>animation-iteration-count</code>:動畫播放次數，預設 1。還有==infinite== 重複播放</li>
+<li><code>animation-timing-function</code>:動畫加速度函式，預設 ease。其他還有： linear、ease-in、ease-out、ease-in-out，step-start、step-end、steps(int,start/end)、cubic-bezier(n,n,n,n)。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*----------可用縮寫--------------*&#x2F;</span><br><span class="line">animation:name duration | timing-function | delay | iteration-count | play-state;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在設定好動畫屬性時，設定關鍵影格 <code>keyframe</code>，可以使用 from…to… 也可以使用 0%~100%設定</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@keyframes rotate &#123;</span><br><span class="line">    from &#123;</span><br><span class="line">      transform: rotate(0deg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    to &#123;</span><br><span class="line">      transform: rotate(360deg);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="opacity"><a href="#opacity" class="headerlink" title="opacity"></a>opacity</h3><p>opacity：被選定的元素的透明度。<br>本次練習，<br>先將 opacity 設定為 0，使其消失，<br>待增加 play 屬性後，將 opacity 設定為 1，使其顯現。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">.music-info&#123;</span><br><span class="line">    background-color: rgba(255, 255, 255, .5);</span><br><span class="line">    border-radius: 15px 15px 0 0;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 0;</span><br><span class="line">    left: 20px;</span><br><span class="line">    width: calc(100% - 40px);</span><br><span class="line">    padding: 10px 10px 10px 150px;</span><br><span class="line">    opacity: 0;</span><br><span class="line">    transform: translateY(0%);</span><br><span class="line">    transition: transform 0.3s ease-in, opacity 0.3s ease-in;</span><br><span class="line">    z-index: 0;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">.music-container.play .music-info &#123;</span><br><span class="line">    opacity: 1;</span><br><span class="line">    transform: translateY(-100%);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="z-index"><a href="#z-index" class="headerlink" title="z-index"></a>z-index</h3><ul>
+<li>利用 z-index 屬性，將選取的元素往上排列顯示。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.music-container&#123;</span><br><span class="line">  background-color: #fff;</span><br><span class="line">  box-shadow: 0 20px 20px 0 rgba(252, 169, 169, .6);</span><br><span class="line">  display: flex;</span><br><span class="line">  padding: 20px 30px;</span><br><span class="line">  margin: 100px 0;</span><br><span class="line">  z-index: 10;</span><br><span class="line">  position: relative;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/z-index">z-index 小科普</a></li>
+</ul>
+<h3 id="object-fit"><a href="#object-fit" class="headerlink" title="object-fit"></a>object-fit</h3><p>object-fit 屬性使元素去適應定義好寬高的&lt;html 標籤&gt;。本次例子使用該屬性，讓歌曲圖片可以更適應容器</p>
+<ul>
+<li>常見的屬性：<ul>
+<li>fill:預設的效果，也就是圖片會變得跟框框一樣大且若跟保留的框框比例不一樣會變形。</li>
+<li>contain: 圖片完整且剛好放進去。</li>
+<li>cover: 圖片剛好填滿。</li>
+<li>none: 圖片不做縮放但還是限制在框框的範圍。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.img-container img&#123;</span><br><span class="line">    border-radius: 50%;</span><br><span class="line">    height: 100px;</span><br><span class="line">    width: inherit;</span><br><span class="line">    position: absolute;</span><br><span class="line">    animation: rotate 3s linear infinite;</span><br><span class="line">    &#x2F;* animation-play-state: paused; 狀態是暫停的 *&#x2F;</span><br><span class="line">    bottom: 0;</span><br><span class="line">    left: 0;</span><br><span class="line">    object-fit: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.w3schools.com/css/css3_object-fit.asp">object-fit 小科普</a></li>
+</ul>
+<h2 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h2><p>實現步驟：</p>
+<ul>
+<li>點擊按鈕播放歌曲，再次點擊按鈕，暫停歌曲。</li>
+<li>點擊按鈕可選擇往前一首曲目或往後一首曲目。</li>
+<li>利用歌曲進度條，調整曲目的不同資訊</li>
+</ul>
+<h3 id="play-pause"><a href="#play-pause" class="headerlink" title="play/ pause()"></a>play/ pause()</h3><ol>
+<li>透過點擊 button 觸發播放歌曲函式，使其<code>addclass(&#39;play&#39;)</code>增加 play 屬性，<code>pause()</code>則是<code>removeClass</code>，帶入已設定好的 css 設定。</li>
+<li>透過 <code>find()</code>方法找到包含<code>(&#39;i.fas&#39;)</code>的元素。</li>
+<li>移除<code>(&#39;fa-play&#39;)</code>屬性</li>
+<li>增加<code>(&#39;fa-pause&#39;)</code>屬性</li>
+<li>利用 audio.play()播放音樂，暫停音樂則是 audio.pause()。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function playSong()&#123;</span><br><span class="line">    musicContainer.addClass(&#39;play&#39;)</span><br><span class="line">    playBtn.find(&#39;i.fas&#39;).removeClass(&#39;fa-play&#39;);</span><br><span class="line">    playBtn.find(&#39;i.fas&#39;).addClass(&#39;fa-pause&#39;);</span><br><span class="line">    audio.play();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="prevSong-nextSong"><a href="#prevSong-nextSong" class="headerlink" title="prevSong()/ nextSong()"></a>prevSong()/ nextSong()</h3><ol>
+<li>利用每點擊一次 prevBtn，觸發函式，讓 songIndex 減一</li>
+<li>設定條件讓 songIndex 不會一直小下去，因為原本的歌曲陣列 songIndex 只有 0、1、2</li>
+<li>執行<code>loadSong()</code>讓曲目圖片改變歌曲也改變</li>
+<li>執行<code>playSong()</code>播放歌曲</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">prevBtn.click(function()&#123;</span><br><span class="line">    prevSong();</span><br><span class="line">&#125;)</span><br><span class="line">function prevSong()&#123;</span><br><span class="line">    songIndex--;</span><br><span class="line">    console.log(songIndex)</span><br><span class="line">    &#x2F;&#x2F;不然index會一直小下去但原本的index只有 0,1,2</span><br><span class="line">    if(songIndex&lt; 0)&#123;</span><br><span class="line">        songIndex &#x3D; songs.length -1</span><br><span class="line">    &#125;</span><br><span class="line">    loadSong(songs[songIndex]);</span><br><span class="line">    playSong()</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="setProgress"><a href="#setProgress" class="headerlink" title="setProgress()"></a>setProgress()</h3><p>目的：點擊進度條，可以選取所選歌曲的播放位置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">progressContainer.click(function()&#123;</span><br><span class="line">    setProgress();</span><br><span class="line">&#125;)</span><br><span class="line">function setProgress()&#123;</span><br><span class="line">    const width &#x3D; this.clientWidth;</span><br><span class="line">    &#x2F;&#x2F; console.log(width);</span><br><span class="line">    const clickX &#x3D; e.offset().left;</span><br><span class="line">    &#x2F;&#x2F; console.log(clickX);</span><br><span class="line">    const duration &#x3D; audio.duration;</span><br><span class="line"></span><br><span class="line">    audio.currentTime &#x3D; (clickX&#x2F;width) *duration;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="timeupdate-event"><a href="#timeupdate-event" class="headerlink" title="timeupdate event"></a>timeupdate event</h3><p>目的：隨著歌曲的播放更新進度條的寬度，以設置寬度百分比的方式顯示在 progress bar。</p>
+<ul>
+<li>觸發時點<ul>
+<li>播放 video/ audio 時，video/ audio 的播放位置改變時。</li>
+</ul>
+</li>
+<li>currentTime：<ul>
+<li>currentTime 屬性 -&gt;讀取 video/ audio 的播放位置。</li>
+</ul>
+</li>
+<li>duration：<ul>
+<li>duration 屬性返回當前 audio/ video 的長度，以秒計算。</li>
+</ul>
+</li>
+<li>progressPercent：<ul>
+<li>按照當前歌曲播放的進度佔總歌長的比例。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; timeupdate event</span><br><span class="line">$(&#39;#audio&#39;).on(&#39;timeupdate&#39;, function() &#123;</span><br><span class="line">    const duration &#x3D; $(&#39;#audio&#39;)[0].duration</span><br><span class="line">    const currentTime &#x3D; $(&#39;#audio&#39;)[0].currentTime</span><br><span class="line">    const progressPercent &#x3D; (currentTime &#x2F; duration) * 100;</span><br><span class="line">    $(&#39;#progress&#39;).css(&#39;width&#39;, &#96;$&#123;progressPercent&#125;%&#96;) &#x2F;*% 不要忘記*&#x2F;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h6 id="tags-javascript"><a href="#tags-javascript" class="headerlink" title="tags: javascript"></a>tags: <code>javascript</code></h6></div><div class="article-licensing box"><div class="licensing-title"><p>JS_練習_音樂播放器</p><p><a href="http://chrislinlin.github.io/2021/01/20/JS練習_音樂播放器/">http://chrislinlin.github.io/2021/01/20/JS練習_音樂播放器/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Chrislinlin</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-01-20</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2021-04-03</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/JS/">JS</a><a class="link-muted mr-2" rel="tag" href="/tags/JS-%E7%B7%B4%E7%BF%92/">JS_練習</a><a class="link-muted mr-2" rel="tag" href="/tags/jQuery/">jQuery</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/01/21/JS%E7%B7%B4%E7%BF%92_%E7%84%A1%E9%99%90%E8%BD%89%E8%BB%B8%E9%A0%81%E9%9D%A2/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">JS_練習_無限轉軸頁面</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/01/17/JS%E7%B7%B4%E7%BF%92_%E8%A8%98%E5%B8%B3%E6%9C%AC/"><span class="level-item">JS_練習_記帳本</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/smile.png" alt="Chrislinlin"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Chrislinlin</p><p class="is-size-6 is-block">還在半路的工程師</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Taoyuan, Taiwan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">17</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">7</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/ppoffice"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a></div></div></div><!--!--><!--!--><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/03/"><span class="level-start"><span class="level-item">March 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/02/"><span class="level-start"><span class="level-item">February 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/01/"><span class="level-start"><span class="level-item">January 2021</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/12/"><span class="level-start"><span class="level-item">December 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/11/"><span class="level-start"><span class="level-item">November 2020</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/JS/"><span class="tag">JS</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/tags/JS-%E7%B7%B4%E7%BF%92/"><span class="tag">JS_練習</span><span class="tag">10</span></a></div><div class="control"><a class="tags has-addons" href="/tags/command-line/"><span class="tag">command_line</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/css/"><span class="tag">css</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/html/"><span class="tag">html</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/jQuery/"><span class="tag">jQuery</span><span class="tag">7</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/boat.png" alt="Chrislinlin" height="28"></a><p class="is-size-7"><span>&copy; 2021 Chrislinlin</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

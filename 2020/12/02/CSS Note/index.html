@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>CSS_Note - Chrislinlin</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Chrislinlin"><meta name="msapplication-TileImage" content="/img/boat.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Chrislinlin"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="CSS Noteweight:100% 若沒有給預設值，會自動填滿整個瀏覽器的頁面寬"><meta property="og:type" content="blog"><meta property="og:title" content="CSS_Note"><meta property="og:url" content="http://chrislinlin.github.io/2020/12/02/CSS%20Note/"><meta property="og:site_name" content="Chrislinlin"><meta property="og:description" content="CSS Noteweight:100% 若沒有給預設值，會自動填滿整個瀏覽器的頁面寬"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://i.imgur.com/8XZ7Grq.png"><meta property="og:image" content="https://i.imgur.com/OkyYYBT.png"><meta property="og:image" content="https://i.imgur.com/3af8gbH.png"><meta property="og:image" content="https://i.imgur.com/XSsEuQt.png"><meta property="article:published_time" content="2020-12-02T15:49:49.000Z"><meta property="article:modified_time" content="2021-04-03T17:09:08.005Z"><meta property="article:author" content="Chrislinlin"><meta property="article:tag" content="css"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://i.imgur.com/8XZ7Grq.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://chrislinlin.github.io/2020/12/02/CSS%20Note/"},"headline":"CSS_Note","image":["https://i.imgur.com/8XZ7Grq.png","https://i.imgur.com/OkyYYBT.png","https://i.imgur.com/3af8gbH.png","https://i.imgur.com/XSsEuQt.png"],"datePublished":"2020-12-02T15:49:49.000Z","dateModified":"2021-04-03T17:09:08.005Z","author":{"@type":"Person","name":"Chrislinlin"},"description":"CSS Noteweight:100% 若沒有給預設值，會自動填滿整個瀏覽器的頁面寬"}</script><link rel="canonical" href="http://chrislinlin.github.io/2020/12/02/CSS%20Note/"><link rel="icon" href="/img/boat.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/boat.png" alt="Chrislinlin" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2020-12-02T15:49:49.000Z" title="2020/12/2 下午11:49:49">2020-12-02</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-04-03T17:09:08.005Z" title="2021/4/4 上午1:09:08">2021-04-04</time></span><span class="level-item">6 minutes read (About 869 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">CSS_Note</h1><div class="content"><h1 id="CSS-Note"><a href="#CSS-Note" class="headerlink" title="CSS Note"></a>CSS Note</h1><h2 id="weight-100"><a href="#weight-100" class="headerlink" title="weight:100%"></a>weight:100%</h2><ul>
+<li>若沒有給預設值，會自動填滿整個瀏覽器的頁面寬<span id="more"></span></li>
+</ul>
+<h2 id="height-100"><a href="#height-100" class="headerlink" title="height:100%"></a>height:100%</h2><ul>
+<li><strong>沒有預設值</strong>，沒寫就是 null</li>
+<li>height 的百分比值需要父元素有一個有效的高度值才能起作用<br>-ex.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">height: 100%; margin: 0; padding: 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="box-sizing：border-box"><a href="#box-sizing：border-box" class="headerlink" title="box-sizing：border-box"></a>box-sizing：border-box</h2><ul>
+<li>讓你不用手動加減就可以涵蓋 padding+margin 在原本容器尺寸</li>
+</ul>
+<h2 id="background-image"><a href="#background-image" class="headerlink" title="background-image"></a>background-image</h2><ul>
+<li>插入背景圖片</li>
+</ul>
+<h2 id="linear-gradient-漸層"><a href="#linear-gradient-漸層" class="headerlink" title="linear-gradient 漸層"></a>linear-gradient 漸層</h2><ul>
+<li><code>background: linear-gradient(方向/角度, 顏色1 位置(％數), 顏色2 位置(％數)....);)</code></li>
+<li>要是方向沒寫的話，預設為<strong>由上往下</strong>，若填寫角度則<strong>由左下角為圓心順時針旋轉</strong></li>
+<li>ex.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">linear-gradient(blue, yellow 30%, blue 90%)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.imgur.com/8XZ7Grq.png"></p>
+<h2 id="position-定位"><a href="#position-定位" class="headerlink" title="position 定位"></a>position 定位</h2><ul>
+<li><p>absolute(絕對定位)</p>
+<ul>
+<li>使用<code>absolute</code>屬性定位的元素是以在他所處==上層容器==的相對位置，若沒有上層容器，則以<code>body</code>(螢幕左上角)位置作為相對位置</li>
+<li>當畫面在捲動時，有該屬性的元素還是會隨著頁面捲動。</li>
+</ul>
+</li>
+<li><p>fixed(固定定位)</p>
+<ul>
+<li>相對於<strong>瀏覽器</strong>視窗來定位，即便頁面捲動，它還是會固定在相同的位置。</li>
+</ul>
+</li>
+<li><p>relative(相對定位)</p>
+<ul>
+<li><p>會使其元素「相對地」調整其原本該出現的所在位置，做出調整。</p>
+</li>
+<li><p>例子，假設設定兩個帶有顏色的容器，<br><img src="https://i.imgur.com/OkyYYBT.png"></p>
+</li>
+<li><p>若增加<code>relative</code>屬性後且給定距原本元素的距離後。<br><img src="https://i.imgur.com/3af8gbH.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="font-weight-文字體粗細"><a href="#font-weight-文字體粗細" class="headerlink" title="font-weight(文字體粗細)"></a>font-weight(文字體粗細)</h2><p><a target="_blank" rel="noopener" href="https://codepen.io/chrislinlin/pen/KKMGJZd">Demo 傳送門</a></p>
+<h2 id="line-height"><a href="#line-height" class="headerlink" title="line-height"></a>line-height</h2><ul>
+<li>text 裡的行高</li>
+</ul>
+<h2 id="transition-動畫"><a href="#transition-動畫" class="headerlink" title="transition 動畫"></a>transition 動畫</h2><ul>
+<li>opacity .5s .5s //延長多久 delay 多久</li>
+</ul>
+<h3 id="常見屬性"><a href="#常見屬性" class="headerlink" title="常見屬性"></a>常見屬性</h3><ul>
+<li>transition-delay</li>
+<li>transition-duration</li>
+<li>transition-property</li>
+<li>transition-timing-function</li>
+<li>可以跟 transform 一起搭配</li>
+</ul>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><p>假設 html 有一個容器，我們在 css 設定他碰到時容器會以 2 秒時間增長程式碼如下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">div &#123;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  background: red;</span><br><span class="line">  transition: width 2s;</span><br><span class="line">&#125;</span><br><span class="line">div:hover &#123;</span><br><span class="line">  width: 300px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="transform"><a href="#transform" class="headerlink" title="transform"></a>transform</h2><ul>
+<li>2D/3d transform</li>
+<li>常見屬性：<ul>
+<li>translate 以原本容器所在處，往 X 或 Y 軸移動，</li>
+<li>scaleX/scaleY()</li>
+<li>rotate(角度) 讓容器原地旋轉多少角度，若角度值為負數，則逆時間旋轉，要是角度為負責代表逆時鐘旋轉。</li>
+</ul>
+</li>
+</ul>
+<p>transform:translate</p>
+<h2 id="z-index-層"><a href="#z-index-層" class="headerlink" title="z-index 層"></a>z-index 層</h2><ul>
+<li>只有在設定 position 的元素上會有效</li>
+<li>設定值越高越前面，值可以為負數</li>
+<li>檢查</li>
+</ul>
+<ol>
+<li>被覆蓋的層(想要置頂的層）的 position 是否也為 relative 或者 absolute</li>
+<li>如果 1 成立，則判斷是否此層的 z-index 比誤覆蓋的層的 z-index 數值大</li>
+<li>如果 2 成立，判斷是否此層的父級元素比誤覆蓋的層的 z-index 數值大</li>
+<li>如果 3 成立，判斷是否此層的父級元素比誤覆蓋的層的父級層的 z-index 數值大</li>
+</ol>
+<h2 id="overflow"><a href="#overflow" class="headerlink" title="overflow"></a>overflow</h2><ul>
+<li>元素要是超出某一範圍時該怎麼辦</li>
+<li>常見的值<ul>
+<li>overflow:auto; //預設會自動使用捲軸</li>
+<li>overflow:visible;　//顯示的文字或圖片會直接超出範圍，不使用捲軸。</li>
+<li>overflow:hidden;　//自動隱藏超出的文字或圖片。</li>
+<li>overflow:scroll;　//自動產生捲軸。</li>
+<li>overflow:inherit;　//繼承自父元素的可見性。</li>
+</ul>
+</li>
+</ul>
+<h2 id="css-選擇器-子選擇器-選擇器之間使用-gt-大於符號"><a href="#css-選擇器-子選擇器-選擇器之間使用-gt-大於符號" class="headerlink" title="css 選擇器- 子選擇器(選擇器之間使用&gt;大於符號)"></a>css 選擇器- 子選擇器(選擇器之間使用<code>&gt;</code>大於符號)</h2><p>選擇父元素的子元素，但不包括子元素的子元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;div1&quot;&gt;&lt;p&gt;div1-P1&lt;&#x2F;p&gt;&lt;span&gt;&lt;p&gt;div1-P2&lt;&#x2F;p&gt;&lt;&#x2F;span&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;div2&quot;&gt;&lt;p&gt;div2-P1&lt;&#x2F;p&gt;&lt;span&gt;&lt;p&gt;div2-P2&lt;&#x2F;p&gt;&lt;&#x2F;span&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.div1 &gt; p &#123;</span><br><span class="line">	color: #F00;</span><br><span class="line">&#125;</span><br><span class="line">.div2 p &#123;</span><br><span class="line">	color: #F00;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.imgur.com/XSsEuQt.png"></p>
+<h6 id="tags-css"><a href="#tags-css" class="headerlink" title="tags: css"></a>tags: <code>css</code></h6></div><div class="article-licensing box"><div class="licensing-title"><p>CSS_Note</p><p><a href="http://chrislinlin.github.io/2020/12/02/CSS Note/">http://chrislinlin.github.io/2020/12/02/CSS Note/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Chrislinlin</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2020-12-02</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2021-04-04</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/css/">css</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2020/12/05/JS%E7%B7%B4%E7%BF%92_%E9%9B%BB%E5%BD%B1%E9%99%A2%E8%A8%82%E4%BD%8D%E9%A0%81%E9%9D%A2/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">JS_練習_電影院選位頁面</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2020/12/01/CSS%20%E9%81%B8%E5%8F%96%E5%99%A8/"><span class="level-item">css_練習_偽類及偽元素</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/smile.png" alt="Chrislinlin"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Chrislinlin</p><p class="is-size-6 is-block">還在半路的工程師</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Taoyuan, Taiwan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">25</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">10</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/ppoffice"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a></div></div></div><!--!--><!--!--><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/04/"><span class="level-start"><span class="level-item">April 2021</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/03/"><span class="level-start"><span class="level-item">March 2021</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/02/"><span class="level-start"><span class="level-item">February 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/01/"><span class="level-start"><span class="level-item">January 2021</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/12/"><span class="level-start"><span class="level-item">December 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/11/"><span class="level-start"><span class="level-item">November 2020</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/JS/"><span class="tag">JS</span><span class="tag">16</span></a></div><div class="control"><a class="tags has-addons" href="/tags/JS-%E7%B7%B4%E7%BF%92/"><span class="tag">JS_練習</span><span class="tag">10</span></a></div><div class="control"><a class="tags has-addons" href="/tags/PesodoCode/"><span class="tag">PesodoCode</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/bootstrap/"><span class="tag">bootstrap</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/command-line/"><span class="tag">command_line</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/css/"><span class="tag">css</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/git/"><span class="tag">git</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/html/"><span class="tag">html</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/jQuery/"><span class="tag">jQuery</span><span class="tag">7</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/boat.png" alt="Chrislinlin" height="28"></a><p class="is-size-7"><span>&copy; 2021 Chrislinlin</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
